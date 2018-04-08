@@ -16,5 +16,18 @@ namespace anton6
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int n = Convert.ToInt32(textBox1.Text);
+            int k = 0;
+            int o = 0;
+
+            k = n / 10;
+            o = n % 10;
+
+            textBox2.Text += $"{o}{k}" + Environment.NewLine;
+
+        }
     }
 }
